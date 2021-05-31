@@ -5,6 +5,7 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 GET     /oidc/index.html            controllers.HomeController.oidcIndex()
+GET     /invite.html                controllers.HomeController.invite
 GET     /protected/index.html       controllers.HomeController.protectedIndex()
 GET     /callback                   @org.pac4j.play.CallbackController.callback()
 POST    /callback                   @org.pac4j.play.CallbackController.callback()

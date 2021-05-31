@@ -16,6 +16,10 @@ public class HomeController extends Controller {
         return ok(views.html.index.render());
     }
 
+    public Result invite() {
+        return ok(views.html.invite.render());
+    }
+
     @Secure(clients = "OidcClient")
     public Result oidcIndex() { return protectedIndexView(); }
 
